@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Garage V. Parrot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <!-- Barre de navigation -->
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Garage Vincent Parrot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="galerie.html">Vente voitures d'occasion</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Carrosserie</a></li>
+                    <li><a class="dropdown-item" href="#">Mecanique</a></li>                    
+                    <li><a class="dropdown-item" href="#">Entretien</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <br>
+              <div class="dropdown">
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Connecter
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                  </div>
+                 
+                  <button type="submit" class="btn btn-primary btn-sm">Connecter</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+<br><br><br>
+     
+
+<!-- temoignages -->
+
+<div id="temoignagesAutoplay" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <p> commentaires</p>
+    </div>
+    <div class="carousel-item">
+      <p> commentaires  2</p>
+    </div>
+    <div class="carousel-item">
+      <p> commentaires  3</p>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- contacter garage -->
+
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    Envoyer message
+  </button>
+  <form class="dropdown-menu p-4">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom</label>
+      <input type="name" class="form-control" id="name" placeholder="Nom">
+    </div>
+    <div class="mb-3">
+      <label for="prenom" class="form-label">Prenom</label>
+      <input type="surname" class="form-control" id="surname" placeholder="Prenom">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail2" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="ntelph" class="form-label">Telephone</label>
+      <input type="phone" class="form-control" id="phone" placeholder="Telephone">
+    </div>
+    <div class="mb-3">
+      <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form><button type="button" class="btn btn-primary"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Appeler 02 99 35 44 93
+</button>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
